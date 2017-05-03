@@ -57,7 +57,8 @@ namespace HuffmanHenryCase1
 
         private void BtnDeserialize_Click(object sender, EventArgs e)
         {
-            // Get the path.
+            MainActivity.EmployeeListSortedByLastName.Clear();
+
             List<Employee> temp = new List<Employee>();
 
             string specialApplicationDataDirectory =
@@ -73,7 +74,7 @@ namespace HuffmanHenryCase1
 
             foreach (Employee person in temp)
             {
-                
+                MainActivity.EmployeeListSortedByLastName.Add(person.employeeId, person);
             }
 
         }
@@ -89,6 +90,8 @@ namespace HuffmanHenryCase1
                 System.Xml.Serialization.XmlSerializer(typeof(List<Employee>));
             StreamWriter sw = new StreamWriter(fileName);
             serialCurrent.Serialize(sw, MainActivity.EmployeeListSortedByLastName.Values.ToList());
+            sw.Close();
+
             Toast.MakeText(this, "Serialized List.", ToastLength.Short).Show();
         }
 
