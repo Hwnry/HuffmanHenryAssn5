@@ -80,4 +80,45 @@ D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Se
 D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\HuffmanHenryCase1.dll.mdb
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.pdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.HuffmanHenryCase1.apk
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.HuffmanHenryCase1-Signed.apk
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\HuffmanHenryCase1.csprojResolveAssemblyReference.cache
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\HuffmanHenryCase1.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\HuffmanHenryCase1.pdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\bin\HuffmanHenryCase1.HuffmanHenryCase1.apk
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\res\layout\operations.xml
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\res\layout\crud.xml
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\res\layout\statistics.xml
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\res\layout\main.xml
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\res\values\strings.xml
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\res\drawable\icon.png
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\R.cs.flag
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\uploadflags.txt
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\Java.Interop.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\Mono.Android.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\mscorlib.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.Core.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.Net.Http.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.Xml.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\HuffmanHenryCase1.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Core.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\HuffmanHenryCase1.dll.mdb
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\bin\Debug\HuffmanHenryCase1.dll.mdb

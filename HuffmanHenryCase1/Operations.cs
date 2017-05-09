@@ -57,138 +57,167 @@ namespace HuffmanHenryCase1
 
         private void BtnDeserialize_Click(object sender, EventArgs e)
         {
-            MainActivity.EmployeeListSortedByLastName.Clear();
-
-            List<Employee> temp = new List<Employee>();
-
-            string specialApplicationDataDirectory =
-                System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData);
-            string fileName = Path.Combine(specialApplicationDataDirectory, "SerializedData.xml");
-
-            System.Xml.Serialization.XmlSerializer serialCurrent = new
-                System.Xml.Serialization.XmlSerializer(typeof(List<Employee>));
-            StreamReader sr = new StreamReader(fileName);
-
-            temp = (List<Employee>)serialCurrent.Deserialize(sr);
-            sr.Close();
-
-            foreach (Employee person in temp)
+            try
             {
-                MainActivity.EmployeeListSortedByLastName.Add(person.employeeId, person);
+                MainActivity.EmployeeListSortedByLastName.Clear();
+
+                List<Employee> temp = new List<Employee>();
+
+                string specialApplicationDataDirectory =
+                    System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData);
+                string fileName = Path.Combine(specialApplicationDataDirectory, "SerializedData.xml");
+
+                System.Xml.Serialization.XmlSerializer serialCurrent = new
+                    System.Xml.Serialization.XmlSerializer(typeof(List<Employee>));
+                StreamReader sr = new StreamReader(fileName);
+
+                temp = (List<Employee>) serialCurrent.Deserialize(sr);
+                sr.Close();
+
+                foreach (Employee person in temp)
+                {
+                    MainActivity.EmployeeListSortedByLastName.Add(person.employeeId, person);
+                }
+                Toast.MakeText(this, "Deserialized List.", ToastLength.Short).Show();
             }
 
+            catch
+            {
+                Toast.MakeText(this, "Error Deserializing.", ToastLength.Short).Show();
+            }
         }
 
         private void BtnSerialize_Click(object sender, EventArgs e)
         {
-            // Get the path and file name as before.
-            string specialApplicationDataDirectory =
-                System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData);
-            string fileName = Path.Combine(specialApplicationDataDirectory, "SerializedData.xml");
+            try
+            {
+                // Get the path and file name as before.
+                string specialApplicationDataDirectory =
+                    System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData);
+                string fileName = Path.Combine(specialApplicationDataDirectory, "SerializedData.xml");
 
-            System.Xml.Serialization.XmlSerializer serialCurrent = new
-                System.Xml.Serialization.XmlSerializer(typeof(List<Employee>));
-            StreamWriter sw = new StreamWriter(fileName);
-            serialCurrent.Serialize(sw, MainActivity.EmployeeListSortedByLastName.Values.ToList());
-            sw.Close();
+                System.Xml.Serialization.XmlSerializer serialCurrent = new
+                    System.Xml.Serialization.XmlSerializer(typeof(List<Employee>));
+                StreamWriter sw = new StreamWriter(fileName);
+                serialCurrent.Serialize(sw, MainActivity.EmployeeListSortedByLastName.Values.ToList());
+                sw.Close();
 
-            Toast.MakeText(this, "Serialized List.", ToastLength.Short).Show();
+                Toast.MakeText(this, "Serialized List.", ToastLength.Short).Show();
+            }
+            catch
+            {
+                Toast.MakeText(this, "Error Serializing List.", ToastLength.Short).Show();
+            }
         }
 
         private void BtnImport_Click(object sender, EventArgs e)
         {
-            //clear the list 
-            MainActivity.EmployeeListSortedByLastName.Clear();
-
-            // Get the path as before.
-            string specialApplicationDataDirectory =
-                System.Environment.GetFolderPath(
-                    System.Environment.SpecialFolder.ApplicationData);
-            string fileName = Path.Combine(specialApplicationDataDirectory, "EmployeeExport.csv");
-
-            // Array to store the parsed fields of the current record.
-            string[] fields;
-
-            // The delimiter character must be stored as an array even though there
-            // is only only one record. 
-            char[] delimiter = { ',' };
-            string currentRecord;
-            StreamReader srCurrent = new StreamReader(fileName);
-
-            // Priming read. The file might be empty.
-            currentRecord = srCurrent.ReadLine();
-
-            // Loop to process records.
-            while (currentRecord != null)
+            try
             {
-                // Split the record into its component fields.
-                fields = currentRecord.Split(delimiter);
+                //clear the list 
+                MainActivity.EmployeeListSortedByLastName.Clear();
 
-                Employee currentEmployee = new Employee();
+                // Get the path as before.
+                string specialApplicationDataDirectory =
+                    System.Environment.GetFolderPath(
+                        System.Environment.SpecialFolder.ApplicationData);
+                string fileName = Path.Combine(specialApplicationDataDirectory, "EmployeeExport.csv");
 
-                bool noErrors = true;
-                noErrors = System.Int32.TryParse(fields[0], out currentEmployee.employeeId);
-                currentEmployee.firstName = fields[1];
-                currentEmployee.lastName = fields[2];
-                noErrors = noErrors && System.Double.TryParse(fields[3], out currentEmployee.hourlyWage);
-                noErrors = noErrors && System.Int32.TryParse(fields[4], out currentEmployee.hoursWorked);
-                noErrors = noErrors && System.Double.TryParse(fields[5], out currentEmployee.totalPayRoll);
+                // Array to store the parsed fields of the current record.
+                string[] fields;
 
-                if (!noErrors)
+                // The delimiter character must be stored as an array even though there
+                // is only only one record. 
+                char[] delimiter = {','};
+                string currentRecord;
+                StreamReader srCurrent = new StreamReader(fileName);
+
+                // Priming read. The file might be empty.
+                currentRecord = srCurrent.ReadLine();
+
+                // Loop to process records.
+                while (currentRecord != null)
                 {
-                    Toast.MakeText(this, "Errors Importing.", ToastLength.Short).Show();
-                    break;
+                    // Split the record into its component fields.
+                    fields = currentRecord.Split(delimiter);
+
+                    Employee currentEmployee = new Employee();
+
+                    bool noErrors = true;
+                    noErrors = System.Int32.TryParse(fields[0], out currentEmployee.employeeId);
+                    currentEmployee.firstName = fields[1];
+                    currentEmployee.lastName = fields[2];
+                    noErrors = noErrors && System.Double.TryParse(fields[3], out currentEmployee.hourlyWage);
+                    noErrors = noErrors && System.Int32.TryParse(fields[4], out currentEmployee.hoursWorked);
+                    noErrors = noErrors && System.Double.TryParse(fields[5], out currentEmployee.totalPayRoll);
+
+                    if (!noErrors)
+                    {
+                        Toast.MakeText(this, "Errors Importing.", ToastLength.Short).Show();
+                        break;
+                    }
+
+                    //    // Add the current record to the list.
+                    MainActivity.EmployeeListSortedByLastName.Add(currentEmployee.employeeId, currentEmployee);
+
+                    // Try and read the next record.
+                    currentRecord = srCurrent.ReadLine();
                 }
 
-                //    // Add the current record to the list.
-                MainActivity.EmployeeListSortedByLastName.Add(currentEmployee.employeeId, currentEmployee);
+                // Close the file.
+                srCurrent.Close();
 
-                // Try and read the next record.
-                currentRecord = srCurrent.ReadLine();
+                Toast.MakeText(this, "Employees Imported", ToastLength.Short).Show();
             }
-
-            // Close the file.
-            srCurrent.Close();
-
-            Toast.MakeText(this, "Employees Imported", ToastLength.Short).Show();
+            catch
+            {
+                Toast.MakeText(this, "Error Importing Employees.", ToastLength.Short).Show();
+            }
         }
 
         private void BtnExport_Click(object sender, EventArgs e)
         {
-            // Get the path.
-            string specialApplicationDataDirectory =
-                System.Environment.GetFolderPath(
-                    System.Environment.SpecialFolder.ApplicationData);
-            string fileName = Path.Combine(specialApplicationDataDirectory, "EmployeeExport.csv");
-
-            // Create the writer.
-            StreamWriter swCurrent = new StreamWriter(fileName);
-
-            //// Enumerate the list and write each record. Write a comma
-            //// between each field. Write a carriage return at the end
-            //// of line.
-            foreach (KeyValuePair<int, Employee> eCurrent in MainActivity.EmployeeListSortedByLastName)
+            try
             {
+                // Get the path.
+                string specialApplicationDataDirectory =
+                    System.Environment.GetFolderPath(
+                        System.Environment.SpecialFolder.ApplicationData);
+                string fileName = Path.Combine(specialApplicationDataDirectory, "EmployeeExport.csv");
 
-                swCurrent.Write(eCurrent.Value.employeeId.ToString());
-                swCurrent.Write(",");
-                swCurrent.Write(eCurrent.Value.firstName.ToString());
-                swCurrent.Write(",");
-                swCurrent.Write(eCurrent.Value.lastName.ToString());
-                swCurrent.Write(",");
-                swCurrent.Write(eCurrent.Value.hourlyWage.ToString());
-                swCurrent.Write(",");
-                swCurrent.Write(eCurrent.Value.hoursWorked.ToString());
-                swCurrent.Write(",");
-                swCurrent.Write(eCurrent.Value.totalPayRoll.ToString());
+                // Create the writer.
+                StreamWriter swCurrent = new StreamWriter(fileName);
 
-                swCurrent.WriteLine();
+                //// Enumerate the list and write each record. Write a comma
+                //// between each field. Write a carriage return at the end
+                //// of line.
+                foreach (KeyValuePair<int, Employee> eCurrent in MainActivity.EmployeeListSortedByLastName)
+                {
+
+                    swCurrent.Write(eCurrent.Value.employeeId.ToString());
+                    swCurrent.Write(",");
+                    swCurrent.Write(eCurrent.Value.firstName.ToString());
+                    swCurrent.Write(",");
+                    swCurrent.Write(eCurrent.Value.lastName.ToString());
+                    swCurrent.Write(",");
+                    swCurrent.Write(eCurrent.Value.hourlyWage.ToString());
+                    swCurrent.Write(",");
+                    swCurrent.Write(eCurrent.Value.hoursWorked.ToString());
+                    swCurrent.Write(",");
+                    swCurrent.Write(eCurrent.Value.totalPayRoll.ToString());
+
+                    swCurrent.WriteLine();
+                }
+
+                // Close the file.
+                swCurrent.Close();
+
+                Toast.MakeText(this, "Exported Employee List.", ToastLength.Short).Show();
             }
-
-            // Close the file.
-            swCurrent.Close();
-
-            Toast.MakeText(this, "Exported Employee List.", ToastLength.Short).Show();
+            catch
+            {
+                Toast.MakeText(this, "Error Exporting Employee List.", ToastLength.Short).Show();
+            }
         }
 
         private void BtnInitial_Click(object sender, EventArgs e)

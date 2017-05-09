@@ -1,22 +1,22 @@
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\HuffmanHenryCase1.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\Java.Interop.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\Mono.Android.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\mscorlib.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Core.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.Linq.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Threading.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Collections.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Collections.Concurrent.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Reflection.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Linq.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.Extensions.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Reflection.Extensions.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Net.Http.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.Serialization.dll
-D:\IS 389\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\HuffmanHenryCase1.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\Java.Interop.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\Mono.Android.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\mscorlib.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Core.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Xml.Linq.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Threading.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Collections.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Collections.Concurrent.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Diagnostics.Debug.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Reflection.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Linq.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.Extensions.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Reflection.Extensions.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Net.Http.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.Runtime.Serialization.dll
+D:\Github\HuffmanHenryAssn5\HuffmanHenryAssn5\HuffmanHenryCase1\obj\Debug\android\assets\System.ServiceModel.Internals.dll
